@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment_FED_NEXTGEN</title>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <!--header-->
+        <header class="header">
+            <div class="menu-icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">
+                        <i class="bi bi-search"></i></button>
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">calendar_month</span>
+                <span class="material-icons-outlined"> notifications</span>
+                <img src="image/Mask Group.png" alt="">
+            </div>
+        </header>
+
+        <!--sidebar-->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    Place A Logo Here
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span> Dashboard
+                    </a>
+
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span> Attendence
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span>Employees
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span>Leaves
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank"><span class="material-icons-outlined"> view_comfy </span>Expense
+                    </a>
+
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span>Notice
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#" target="_blank">
+                        <span class="material-icons-outlined"> view_comfy </span>Departments
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#settings">
+                        <span class="material-icons-outlined">expand_more</span>
+                        <span class="material-icons-outlined">settings</span> Settings
+
+                    </a>
+                    <div class="collapse" id="settings">
+                        <ul class="collapse_item">
+                            <li class="sidebar-list-item">
+                                <a href=" # " target="_blank">
+                                    <span class="me-2 "><i class="bi bi-dot "></i> </span>
+                                    </span>
+                                    <span>Approval</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list-item ">
+                                <a href="# " target="_blank">
+                                    <span class="me-2 "><i class="bi bi-dot "></i></span>
+
+                                    <span>Leave</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list-item ">
+                                <a href=" # " target="_blank">
+                                    <span class="me-2 "><i class="bi bi-dot "></i></span>
+
+                                    <span>Office Setting</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-list-item">
+                                <a href="# " target="_blank">
+                                    <span class="me-2 "> <i class="bi bi-dot "></i>  </span>
+
+                                    <span>My Subscriptions</span>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <li class="sidebar-list-item">
+                            <a href="#" target="_blank">
+                                <span class="material-icons-outlined">logout </span> Logout
+                            </a>
+                        </li>
+            </ul>
+        </aside>
+
+        <!--main-->
+        <main class="main-container ">
+            <div class="main-title">
+                <p class="font-weight-bold">DASHBOARD</p>
+            </div>
+            <div class="main-status">
+                <p>Company Status</p>
+            </div>
+            <div class="main-cards">
+
+                <div class="card">
+                    <div class="card-inner">
+
+                        <span class="material-icons-outlined">groups</span> Total Employee
+
+                    </div>
+                    <div class="card-body">
+                        <span class="text-primary font-weight-bold"><p class="text">450</p>
+                            
+                        </span>
+                        <button type="button">View All</button>
+                    </div>
+                    <div>
+                        <img src="image/Frame 33.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-icons-outlined">groups</span> Attend Today
+                    </div>
+                    <div class="card-body">
+                        <span class="text-primary font-weight-bold"><p class="text">420</p></span>
+                        <button type="button">View All</button>
+                    </div>
+                    <div>
+                        <img src="image/Frame 33.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-icons-outlined">groups</span> Employees Leave
+                    </div>
+                    <div class="card-body">
+                        <span class="text-primary font-weight-bold"><p class="text">15</p></span>
+                        <button type="button">View All</button>
+                    </div>
+                    <div>
+                        <img src="image/Frame 33.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <span class="material-icons-outlined">groups</span> New Expense Request
+                    </div>
+                    <div class="card-body">
+                        <span class="text-primary font-weight-bold"><p class="text">5</p></span>
+                        <button type="button">View All</button>
+                    </div>
+                    <div>
+                        <img src="image/Frame 33.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="charts">
+
+                <div class="charts-card">
+                    <p class="chart-title">Top 5 Products</p>
+                    <div id="bar-chart">
+                        <img src="image/Group 427319031.png" alt="">
+                    </div>
+                </div>
+
+                <div class="charts-card">
+                    <p class="chart-title">Purchase and Sales Orders</p>
+                    <div id="area-chart">
+                        <img src="image/Info.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        </div>
+        <script src="script.js "></script>
+</body>
+
+</html>
